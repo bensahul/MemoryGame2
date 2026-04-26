@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.unifecaf.memorygame2;
 
 import java.io.*;
@@ -26,6 +22,7 @@ public class ScoreDAO {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public static ArrayList<Score> lerScores() {
         File file = new File(ARQUIVO);
         if (!file.exists()) return new ArrayList<>();
